@@ -1,9 +1,9 @@
-from Source.framework.gbd_scrapper.helper import SetupSite; \
+from Source.framework.text_scrapper.helper import SetupSite; \
 SetupSite(site = "www.SampleSite.com", \
 username = "None", \
 password =  "None")
 
-from Source.framework.gbd_scrapper.URLBuildFactory import GetAllLinks;
+from Source.framework.text_scrapper.URLBuildFactory import GetAllLinks;
 GetAllLinks(site_url="http://www.SampleSite.com", \
             login_page="http://www.SampleSite.com", \
             username_field_type=None, \
@@ -19,7 +19,7 @@ site_specific_url_extender = "" \
 
 
 
-from Source.framework.gbd_scrapper.helper import insert_scrape_key; \
+from Source.framework.text_scrapper.helper import insert_scrape_key; \
 insert_scrape_key(site = "www.SampleSite.com", \
                   Key_Alias = "First_Level_Category", \
                   Key_Name = ".//*[@id=\"c21714\"]/div/div/div/div[1]/div/div[1]/div[1]/a[2]/text()", \
@@ -33,7 +33,7 @@ insert_scrape_key(site = "www.SampleSite.com", \
 
 
 
-from Source.framework.gbd_scrapper.ProductInfoRetrieverFactory import GetAllProductInformation; \
+from Source.framework.text_scrapper.ProductInfoRetrieverFactory import GetAllProductInformation; \
 GetAllProductInformation(NoOfUrlsToParse=10000, \
                          thread_count=10, \
                          site_url_as_in_db="www.SampleSite.com", \

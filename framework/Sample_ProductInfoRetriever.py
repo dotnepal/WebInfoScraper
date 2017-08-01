@@ -1,4 +1,4 @@
- from gbd_scrapper.ProductInfoRetrieverFactory import GetAllProductInformation
+ from text_scrapper.ProductInfoRetrieverFactory import GetAllProductInformation
 GetAllProductInformation(NoOfUrlsToParse=200,
                          thread_count=10,
                          site_url_as_in_db='www.samplesite.com',

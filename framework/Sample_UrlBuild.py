@@ -1,4 +1,4 @@
-from gbd_scrapper.URLBuildFactory import GetAllLinks
+from text_scrapper.URLBuildFactory import GetAllLinks
 GetAllLinks(site_url="https://www.samplesite.com/wholesale/",
             login_page="https://www.samplesite.com/wholesale/customer/account/login/",
             username_field_name = "login[username]" ,
